@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignIn</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .main {
+        height: 100vh;
+        width: 100%;
+        background-color: #b4c3a0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .box {
+        box-shadow: 0px 5px 22px rgba(9, 9, 9, 0.447);
+        height: max-content;
+        width: 25%;
+        border-radius: 10px;
+        padding: 20px;
+        background-color: white;
+      }
+      h1 {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: black;
+      }
+      p {
+        color: black;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 18px;
+        margin-top: 30px;
+      }
+      input {
+        height: 40px;
+        width: 100%;
+        margin-top: 10px;
+        border-radius: 10px;
+        outline: none;
+        border: 1px solid gainsboro;
+        /* background-color: #3b4148; */
+        color: gray;
+        font-size: 18px;
+        padding: 10px;
+      }
+      .bx {
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+      }
+      #inp2 {
+        height: 20px;
+        width: 20px;
+      }
+      .txt {
+        margin-top: 10px;
+        margin-left: 10px;
+      }
+
+      button {
+        height: 40px;
+        width: 100%;
+        background-color: #f3c33d;
+        color: white;
+        font-size: 20px;
+        border: none;
+        margin-top: 20px;
+        cursor: pointer;
+        outline: none;
+        border-radius: 10px;
+      }
+      a {
+        color: #f3c33d;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="box">
+        <h1>SIGN IN</h1>
+        <p>Email</p>
+        <input type="email" name="" id="useremail" placeholder="Username" />
+        <p>Password</p>
+        <input
+          type="password"
+          name=""
+          id="userpassword"
+          placeholder="Password"
+        />
+        <div class="bx">
+          <input type="checkbox" name="" id="inp2" />
+          <p class="txt">Remember me</p>
+        </div>
+        <button onclick="signin(event)">Login</button>
+        <p>
+          Not Registered Yet?
+          <span class="text"><a href="./signUp.html">Register</a></span>
+        </p>
+      </div>
+    </div>
+    <script src="./form.js"></script>
+  </body>
+</html>
